@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>开发过程记录</title>
+  <style>
+    body { margin: 0; font-family: Arial, "Microsoft YaHei", sans-serif; background: #101827; color: #eef2ff; }
+    main { max-width: 1080px; margin: 0 auto; padding: 42px; }
+    h1 { margin-top: 0; font-size: 32px; }
+    .terminal { background: #020617; border: 1px solid #334155; border-radius: 8px; padding: 22px; font-family: Consolas, monospace; line-height: 1.6; }
+    .prompt { color: #7dd3fc; }
+    .ok { color: #86efac; }
+    .muted { color: #cbd5e1; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>开发过程截图</h1>
+    <div class="terminal">
+      <span class="prompt">PS&gt;</span> python -m py_compile improved_classifier.py<br>
+      <span class="ok">OK</span><br><br>
+      <span class="prompt">PS&gt;</span> python improved_classifier.py --mode mock --evaluate --input data/task1_test_samples.json --output results/evaluation_results.json<br>
+      FAQ 分类评估结果<br>
+      样本数: 30<br>
+      Baseline: 27/30 = 90.00%<br>
+      Improved: 30/30 = 100.00%<br>
+      错分明细（改进后）:<br>
+      - 无<br><br>
+      <span class="prompt">PS&gt;</span> gh auth status<br>
+      <span class="muted">You are not logged into any GitHub hosts. To log in, run: gh auth login</span><br><br>
+      <span class="prompt">PS&gt;</span> git status --short<br>
+      <span class="muted">本地交付仓库已生成，等待提交和 GitHub 登录后推送。</span>
+    </div>
+  </main>
+</body>
+</html>

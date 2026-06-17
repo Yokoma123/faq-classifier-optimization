@@ -1,0 +1,479 @@
+{
+  "labels": [
+    "退款退货",
+    "物流查询",
+    "账号问题",
+    "商品咨询",
+    "投诉建议",
+    "其他"
+  ],
+  "total_samples": 30,
+  "baseline": {
+    "correct": 27,
+    "total": 30,
+    "accuracy": 0.9,
+    "per_label": {
+      "退款退货": {
+        "correct": 7,
+        "total": 7,
+        "accuracy": 1.0
+      },
+      "物流查询": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "账号问题": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "商品咨询": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "投诉建议": {
+        "correct": 2,
+        "total": 5,
+        "accuracy": 0.4
+      },
+      "其他": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "improved": {
+    "correct": 30,
+    "total": 30,
+    "accuracy": 1.0,
+    "per_label": {
+      "退款退货": {
+        "correct": 7,
+        "total": 7,
+        "accuracy": 1.0
+      },
+      "物流查询": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "账号问题": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "商品咨询": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "投诉建议": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "其他": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "confusion_matrix": [
+    {
+      "label": "其他",
+      "prediction": "其他",
+      "count": 3
+    },
+    {
+      "label": "商品咨询",
+      "prediction": "商品咨询",
+      "count": 5
+    },
+    {
+      "label": "投诉建议",
+      "prediction": "投诉建议",
+      "count": 5
+    },
+    {
+      "label": "物流查询",
+      "prediction": "物流查询",
+      "count": 6
+    },
+    {
+      "label": "账号问题",
+      "prediction": "账号问题",
+      "count": 4
+    },
+    {
+      "label": "退款退货",
+      "prediction": "退款退货",
+      "count": 7
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "question": "我买的衣服想退掉，怎么操作",
+      "label": "退款退货",
+      "baseline_pred": "退款退货",
+      "baseline_raw": "baseline.keyword.refund",
+      "improved_pred": "退款退货",
+      "improved_raw": "mock.rule.refund",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 2,
+      "question": "快递到哪了，三天了还没到",
+      "label": "物流查询",
+      "baseline_pred": "物流查询",
+      "baseline_raw": "baseline.keyword.logistics",
+      "improved_pred": "物流查询",
+      "improved_raw": "mock.rule.logistics",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 3,
+      "question": "我忘记密码了，怎么找回",
+      "label": "账号问题",
+      "baseline_pred": "账号问题",
+      "baseline_raw": "baseline.keyword.account",
+      "improved_pred": "账号问题",
+      "improved_raw": "mock.rule.account",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 4,
+      "question": "这个耳机支持降噪吗",
+      "label": "商品咨询",
+      "baseline_pred": "商品咨询",
+      "baseline_raw": "baseline.keyword.product",
+      "improved_pred": "商品咨询",
+      "improved_raw": "mock.rule.product",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 5,
+      "question": "你们客服态度太差了，我要投诉",
+      "label": "投诉建议",
+      "baseline_pred": "投诉建议",
+      "baseline_raw": "baseline.keyword.complaint",
+      "improved_pred": "投诉建议",
+      "improved_raw": "mock.rule.complaint",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 6,
+      "question": "退款什么时候能到账",
+      "label": "退款退货",
+      "baseline_pred": "退款退货",
+      "baseline_raw": "baseline.keyword.refund",
+      "improved_pred": "退款退货",
+      "improved_raw": "mock.rule.refund",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 7,
+      "question": "包裹显示已签收但我没收到",
+      "label": "物流查询",
+      "baseline_pred": "物流查询",
+      "baseline_raw": "baseline.keyword.logistics",
+      "improved_pred": "物流查询",
+      "improved_raw": "mock.rule.logistics",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 8,
+      "question": "怎么修改绑定的手机号",
+      "label": "账号问题",
+      "baseline_pred": "账号问题",
+      "baseline_raw": "baseline.keyword.account",
+      "improved_pred": "账号问题",
+      "improved_raw": "mock.rule.account",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 9,
+      "question": "这款鞋有42码的吗",
+      "label": "商品咨询",
+      "baseline_pred": "商品咨询",
+      "baseline_raw": "baseline.keyword.product",
+      "improved_pred": "商品咨询",
+      "improved_raw": "mock.rule.product",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 10,
+      "question": "商品质量有问题，我要举报",
+      "label": "投诉建议",
+      "baseline_pred": "商品咨询",
+      "baseline_raw": "baseline.keyword.product",
+      "improved_pred": "投诉建议",
+      "improved_raw": "mock.rule.complaint",
+      "error": "",
+      "baseline_correct": false,
+      "improved_correct": true
+    },
+    {
+      "id": 11,
+      "question": "七天无理由退货怎么退",
+      "label": "退款退货",
+      "baseline_pred": "退款退货",
+      "baseline_raw": "baseline.keyword.refund",
+      "improved_pred": "退款退货",
+      "improved_raw": "mock.rule.refund",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 12,
+      "question": "物流信息两天没更新了",
+      "label": "物流查询",
+      "baseline_pred": "物流查询",
+      "baseline_raw": "baseline.keyword.logistics",
+      "improved_pred": "物流查询",
+      "improved_raw": "mock.rule.logistics",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 13,
+      "question": "账号被冻结了，怎么回事",
+      "label": "账号问题",
+      "baseline_pred": "账号问题",
+      "baseline_raw": "baseline.keyword.account",
+      "improved_pred": "账号问题",
+      "improved_raw": "mock.rule.account",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 14,
+      "question": "这个手机壳是硅胶的还是塑料的",
+      "label": "商品咨询",
+      "baseline_pred": "商品咨询",
+      "baseline_raw": "baseline.keyword.product",
+      "improved_pred": "商品咨询",
+      "improved_raw": "mock.rule.product",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 15,
+      "question": "建议你们增加夜间配送选项",
+      "label": "投诉建议",
+      "baseline_pred": "物流查询",
+      "baseline_raw": "baseline.keyword.logistics",
+      "improved_pred": "投诉建议",
+      "improved_raw": "mock.rule.complaint",
+      "error": "",
+      "baseline_correct": false,
+      "improved_correct": true
+    },
+    {
+      "id": 16,
+      "question": "退货邮费谁出",
+      "label": "退款退货",
+      "baseline_pred": "退款退货",
+      "baseline_raw": "baseline.keyword.refund",
+      "improved_pred": "退款退货",
+      "improved_raw": "mock.rule.refund",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 17,
+      "question": "快递能改派送地址吗",
+      "label": "物流查询",
+      "baseline_pred": "物流查询",
+      "baseline_raw": "baseline.keyword.logistics",
+      "improved_pred": "物流查询",
+      "improved_raw": "mock.rule.logistics",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 18,
+      "question": "我收到一条短信说异地登录了，是真的吗",
+      "label": "账号问题",
+      "baseline_pred": "账号问题",
+      "baseline_raw": "baseline.keyword.account",
+      "improved_pred": "账号问题",
+      "improved_raw": "mock.rule.account",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 19,
+      "question": "这个包是真皮的吗",
+      "label": "商品咨询",
+      "baseline_pred": "商品咨询",
+      "baseline_raw": "baseline.keyword.product",
+      "improved_pred": "商品咨询",
+      "improved_raw": "mock.rule.product",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 20,
+      "question": "买了三天就坏了，什么破质量",
+      "label": "投诉建议",
+      "baseline_pred": "投诉建议",
+      "baseline_raw": "baseline.keyword.complaint",
+      "improved_pred": "投诉建议",
+      "improved_raw": "mock.rule.complaint",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 21,
+      "question": "退款已经申请了但是快递还没寄回去，我可以先取消退货吗",
+      "label": "退款退货",
+      "baseline_pred": "退款退货",
+      "baseline_raw": "baseline.keyword.refund",
+      "improved_pred": "退款退货",
+      "improved_raw": "mock.rule.refund",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 22,
+      "question": "我的快递到了但放错快递柜了怎么办",
+      "label": "物流查询",
+      "baseline_pred": "物流查询",
+      "baseline_raw": "baseline.keyword.logistics",
+      "improved_pred": "物流查询",
+      "improved_raw": "mock.rule.logistics",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 23,
+      "question": "你们这个退货流程也太麻烦了吧，我都搞不懂怎么操作",
+      "label": "投诉建议",
+      "baseline_pred": "退款退货",
+      "baseline_raw": "baseline.keyword.refund",
+      "improved_pred": "投诉建议",
+      "improved_raw": "mock.rule.complaint",
+      "error": "",
+      "baseline_correct": false,
+      "improved_correct": true
+    },
+    {
+      "id": 24,
+      "question": "我想问下这个退款的事顺便看看快递到没到",
+      "label": "退款退货",
+      "baseline_pred": "退款退货",
+      "baseline_raw": "baseline.keyword.refund",
+      "improved_pred": "退款退货",
+      "improved_raw": "mock.rule.refund",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 25,
+      "question": "东西寄错地址了，能帮我改一下",
+      "label": "物流查询",
+      "baseline_pred": "物流查询",
+      "baseline_raw": "baseline.keyword.logistics",
+      "improved_pred": "物流查询",
+      "improved_raw": "mock.rule.logistics",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 26,
+      "question": "我要退的这个订单里有两个商品，只退一个行不行",
+      "label": "退款退货",
+      "baseline_pred": "退款退货",
+      "baseline_raw": "baseline.keyword.refund",
+      "improved_pred": "退款退货",
+      "improved_raw": "mock.rule.refund",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 27,
+      "question": "这个充电宝能带上飞机吗",
+      "label": "商品咨询",
+      "baseline_pred": "商品咨询",
+      "baseline_raw": "baseline.keyword.product",
+      "improved_pred": "商品咨询",
+      "improved_raw": "mock.rule.product",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 28,
+      "question": "嗯嗯好的谢谢",
+      "label": "其他",
+      "baseline_pred": "其他",
+      "baseline_raw": "baseline.keyword.other",
+      "improved_pred": "其他",
+      "improved_raw": "mock.rule.other",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 29,
+      "question": "？？？",
+      "label": "其他",
+      "baseline_pred": "其他",
+      "baseline_raw": "baseline.keyword.other",
+      "improved_pred": "其他",
+      "improved_raw": "mock.rule.empty_or_symbol",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    },
+    {
+      "id": 30,
+      "question": "你好",
+      "label": "其他",
+      "baseline_pred": "其他",
+      "baseline_raw": "baseline.keyword.other",
+      "improved_pred": "其他",
+      "improved_raw": "mock.rule.other",
+      "error": "",
+      "baseline_correct": true,
+      "improved_correct": true
+    }
+  ]
+}

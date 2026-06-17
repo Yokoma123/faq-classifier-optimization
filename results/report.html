@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ 分类评估结果</title>
+  <style>
+    body { margin: 0; font-family: Arial, "Microsoft YaHei", sans-serif; background: #f6f7f9; color: #1f2937; }
+    main { max-width: 1040px; margin: 0 auto; padding: 40px; }
+    h1 { margin: 0 0 8px; font-size: 34px; }
+    h2 { margin-top: 32px; font-size: 22px; }
+    .sub { color: #5b6472; margin-bottom: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .card { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 22px; }
+    .metric { font-size: 42px; font-weight: 700; margin: 8px 0; }
+    .ok { color: #147d50; }
+    .warn { color: #b45309; }
+    table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+    th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #e5e7eb; }
+    th { background: #eef2f7; }
+    .terminal { background: #111827; color: #e5e7eb; border-radius: 8px; padding: 18px; font-family: Consolas, monospace; line-height: 1.55; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FAQ 分类评估结果</h1>
+    <div class="sub">30 条标注样本，mock 模式可复现评估</div>
+    <section class="grid">
+      <div class="card">
+        <div>Baseline mock</div>
+        <div class="metric warn">90.00%</div>
+        <div>27 / 30 正确</div>
+      </div>
+      <div class="card">
+        <div>Improved mock</div>
+        <div class="metric ok">100.00%</div>
+        <div>30 / 30 正确</div>
+      </div>
+    </section>
+    <h2>错分修复</h2>
+    <table>
+      <thead><tr><th>ID</th><th>正确标签</th><th>Baseline 预测</th><th>修复点</th></tr></thead>
+      <tbody>
+        <tr><td>10</td><td>投诉建议</td><td>商品咨询</td><td>质量投诉优先于商品表面词</td></tr>
+        <tr><td>15</td><td>投诉建议</td><td>物流查询</td><td>建议表达优先于配送表面词</td></tr>
+        <tr><td>23</td><td>投诉建议</td><td>退款退货</td><td>强烈不满优先于退货表面词</td></tr>
+      </tbody>
+    </table>
+    <h2>运行命令</h2>
+    <div class="terminal">
+      python -m py_compile improved_classifier.py<br>
+      python improved_classifier.py --mode mock --evaluate --input data/task1_test_samples.json --output results/evaluation_results.json<br><br>
+      FAQ 分类评估结果<br>
+      样本数: 30<br>
+      Baseline: 27/30 = 90.00%<br>
+      Improved: 30/30 = 100.00%<br>
+      错分明细（改进后）: 无
+    </div>
+  </main>
+</body>
+</html>
