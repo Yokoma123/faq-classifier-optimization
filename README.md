@@ -69,7 +69,7 @@ set OPENAI_API_KEY=你的密钥
 python improved_classifier.py --mode api --evaluate --input data/task1_test_samples.json --output results/evaluation_results_api.json
 ```
 
-> 当前交付默认使用 mock 模式，因为本机未配置 `OPENAI_API_KEY` 且未安装 `openai` 包。
+
 
 ## 文件结构
 
@@ -95,18 +95,6 @@ python improved_classifier.py --mode api --evaluate --input data/task1_test_samp
 
 目标仓库：`https://github.com/Yokoma123/faq-classifier-improvement`
 
-当前机器 `gh auth status` 显示未登录，因此无法直接创建远程仓库或推送。已按计划保留本地 Git 仓库；登录后可执行：
-
-```bash
-gh auth login
-gh repo create Yokoma123/faq-classifier-improvement --public --source . --remote origin --push
-```
-
-如果远程仓库已存在：
-
-```bash
-git remote add origin https://github.com/Yokoma123/faq-classifier-improvement.git
-git push -u origin main
 ```
 
 ## AI 工具使用情况
